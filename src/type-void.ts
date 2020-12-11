@@ -21,11 +21,11 @@ showFormattedInfo({id: 1, username: 'ulzahk', firstName: 'Francisco'});
 
 // Tipo Void, como tipo de dato de una variable
 let unusable: void;
-unusable = null;
+// unusable = null;
 unusable = undefined;
 
 // Tipo: Never
-function handleError(code: number, message: string): never {
+function handleError(code: number, message: string) {
   // Proceso de tu código
   // Generar un mensaje
   try {

@@ -37,3 +37,22 @@ let createPic = (title: string, date: string, size: SquareSize):object =>{
 
 const picture = createPic('Platzi session', '2020-03-10', '100x100');
 console.log('picture', picture)
+
+// Tipo de retorno con TypeScript
+function handleError(code: number, message: string): never | string {
+  // Procesamiento del Código, mensaje
+  if(message === 'error'){
+    throw new Error(`${message}. Code Error: ${code}`)
+  } else {
+    return 'An error has ocurred';
+  }
+}
+
+try {
+  let result = handleError(200, 'OK'); //string
+  console.log('result', result);
+  result = handleError(404, 'error'); // never // lanzar un error
+  console.log('result', result);
+} catch (error) {
+  
+}

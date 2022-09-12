@@ -33,8 +33,8 @@
   const total = getTotal();
   console.log(total);
   const person = {
-    name: 'Nicolas',
-    lastName: 'Molina'
+    name: 'Francisco',
+    lastName: 'Suarez'
   }
   const rta = { ...person, limit };
   console.log(rta);

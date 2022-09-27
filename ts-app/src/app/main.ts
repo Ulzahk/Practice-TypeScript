@@ -3,7 +3,6 @@ import { faker } from '@faker-js/faker';
 
 for (let index = 0; index < 50; index++) {
   addProducts({
-    id: faker.datatype.uuid(),
     description: faker.commerce.productDescription(),
     image: faker.image.imageUrl(),
     color: faker.commerce.color(),
@@ -12,15 +11,8 @@ for (let index = 0; index < 50; index++) {
     price: parseInt(faker.commerce.price()),
     isNew: faker.datatype.boolean(),
     tags: faker.helpers.arrayElements(['tag1', 'tag2', 'tag3']),
-    createdAt: faker.date.recent(),
-    updatedAt: faker.date.recent(),
     stock: faker.datatype.number({ min: 10, max: 100 }),
-    category: {
-      id: faker.datatype.uuid(),
-      name: faker.commerce.department(),
-      createdAt: faker.date.recent(),
-      updatedAt: faker.date.recent(),
-    }
+    categoryId: faker.datatype.uuid(),
   });
 
   // console.log(products);

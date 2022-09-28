@@ -5,3 +5,7 @@ export interface CreateProductDto extends Omit<Product, 'id' | 'createdAt' | 'up
 };
 
 type pickExample = Pick<Product, 'color' | 'description'>
+
+export interface UpdateProductDto extends Partial<CreateProductDto> { }
+
+type requiredExample = Required<Product>;

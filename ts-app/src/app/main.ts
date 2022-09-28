@@ -25,5 +25,6 @@ for (let index = 0; index < 50; index++) {
   findProducts({
     stock: 10,
     color: 'red',
+    tags: ['One', 'Two', 'Three']
   })
 }

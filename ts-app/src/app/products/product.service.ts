@@ -29,6 +29,8 @@ export const getProduct = (id: string) => {
 export const findProducts = (dto: FindProductDto): Product[] => {
   // code
   // dto.color = 'red'
+  // dto.tags?.pop()
+  // dto.tags?.push()
   return products;
 }
 

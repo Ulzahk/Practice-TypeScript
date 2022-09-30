@@ -9,4 +9,4 @@ date2.getTime();
 date2.toISOString();
 
 console.log(date);
-console.log(date2)
+console.log(date2);
